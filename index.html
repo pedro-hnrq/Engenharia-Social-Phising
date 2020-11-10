@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Special Offers</title>
+    <link rel="shortcut icon" href="img/logo%20marca/favicon.ico">
+
+    <!-- Jquery -->
+    <script src="jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="jquery/jquery.mask.min.js" type="text/javascript"></script>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/floating-labels.css" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap-notify.min.js" type="text/javascript"></script>
+
+
+
+    <!-- JavaScript -->
+    <script src="js/javaspcrit.js" type="text/javascript"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118360413-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118360413-1');
+    </script>
+
+
+
+</head>
+
+<body>
+<form class="form-signin" name="formCadastro" method="post" action="html/Confirmado.php" onsubmit="">
+    <div class="text-center mb-4">
+        <img class="mb-4" src="img/logo%20marca/Special%20Offers.png" alt="" width="125" height="125">
+        <h1 class="h3 mb-3 font-weight-normal">Cadastro</h1>
+    </div>
+    
+    <!-- Nome-->
+    <div class="form-label-group">
+        <input type="text" name="Nome Completo" id="inputName" class="form-control" placeholder="João da Silva" required autofocus>
+        <label for="inputName">Nome Completo</label>
+    </div>
+
+    <!-- CPF-->
+    <div class="form-label-group">
+        <input type="text" id="inputcpf" class="form-control" placeholder="111.222.333-99" maxlength="14"
+               required>
+        <label for="inputcpf">CPF</label>
+    </div>
+
+    <!-- Data de Nascimento -->
+    <div class="form-label-group">
+        <input type="text" id="inputDnasc" class="form-control" name="datN" placeholder="25/05/1997" maxlength="10" required>
+        <label for="inputDnasc">Data de Nascimento</label>
+    </div>
+
+    <!-- E_Mail-->
+    <div class="form-label-group">
+        <input type="email" id="inputEmail" class="form-control" placeholder="joaodasilva@mail.com" required>
+        <label for="inputEmail">E-mail</label>
+    </div>
+
+    <!-- Gênero -->
+
+        <div class="form-group">
+        <div class="radio">
+
+            <label class="col-md-4 control-label">Sexo</label>
+                    <div class="custom-radio col-sm-8" align="center">
+
+                    <label><input type="radio" checked name="genero" id="rd1" value="masculino"> Masculino </label>
+                    <label><input type="radio" name="genero" id="rd2"value="feminino"> Feminino </label>
+                </div>
+
+        </div>
+        </div>
+
+
+    <!-- Telefone ou Celular -->
+    <div class="form-label-group">
+        <input type="text" id="inputCont" class="form-control" placeholder="(00)90000-0000" maxlength="15" required autofocus>
+        <label for="inputCont">Celular</label>
+       <!-- <span class="help-block">Ex.: (00) 90000-0000</span> -->
+    </div>
+
+    <!-- Promoção -->
+    <div class="form-label-group">
+        <div class="form-group">
+            <div class="radio">
+
+                <label class="control-label">Escolha a Promoção</label>
+                <div class="col-xs-8 custom-radio"  align="center">
+
+                    <label><input type="radio" checked name="promocao" id="pm1" value="netflix"> <img src="img/NetFlix1.png" alt="" width="100" height="50" ></label>
+                    <label><input type="radio" name="promocao" id="pm2" value="spotify"> <img src="img/Spotify2.png" alt="" width="100" height="50" > </label>
+                    <label><input type="radio" name="promocao" id="pm3" value="uber"> <img src="img/Uber2.png" alt="" width="100" height="50" > </label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Termos -->
+    <div class="checkbox col-mb-3">
+        <label>
+            <input  type="checkbox" value="remember-me" required> Aceito os <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12737.htm" target="_blank">Termos do Serviço.</a>
+        </label>
+    </div>
+
+    <!-- Botões -->
+    <div align="center">
+        <button class="btn btn-primary btn-lg" type="submit">Carregar</button>
+        <button class="btn btn-lg btn-secondary btn-lg" type="reset">Limpar</button>
+    </div>
+
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+</form>
+</body>
+</html>
